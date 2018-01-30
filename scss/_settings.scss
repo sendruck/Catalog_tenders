@@ -69,12 +69,18 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
+  primary: #064D9F,
+  secondary: #F8FBFD,
+  success: #33CC66,
   warning: #ffae00,
   alert: #cc4b37,
 );
+$menu-color: #FBDB83;
+$footer-color: #FBF7EE;
+$user_info-color: #FDE183;
+$tender_info-color: #F8FBFD;
+$tender_info-border: 1px solid #E5F1FD;
+$link-color: #ffffff;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -82,7 +88,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family:  Arial, Verdana,  sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -222,11 +228,11 @@ $input-error-font-weight: $global-weight-bold;
 // ------------
 
 $accordion-background: $white;
-$accordion-plusminus: true;
+$accordion-plusminus: false;
 $accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
+$accordion-item-color: #666;
+$accordion-item-background-hover: #e2f3fd;
+$accordion-item-padding: 10px 10px 10px 20px;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
 $accordion-content-color: $body-font-color;
@@ -262,17 +268,17 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin: 0 0 $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
+$breadcrumbs-margin: 7px 5px 0px;
+$breadcrumbs-item-font-size: 9px;
+$breadcrumbs-item-color: $link-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem;
-$breadcrumbs-item-uppercase: true;
+$breadcrumbs-item-margin: 0.2rem;
+$breadcrumbs-item-uppercase: false;
 $breadcrumbs-item-separator: true;
 $breadcrumbs-item-separator-item: '/';
 $breadcrumbs-item-separator-item-rtl: '\\';
-$breadcrumbs-item-separator-color: $medium-gray;
+$breadcrumbs-item-separator-color: $link-color;
 
 // 11. Button
 // ----------
