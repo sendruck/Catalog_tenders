@@ -526,14 +526,15 @@ $tender-font-size: 12px;
             .register_announcement {
                 margin-left: 10px;
                 background-color: #FBF7EE;
-                // height: 48px;
                 border: 1px solid #E2DFD8;
-                padding-top: 20px;
+                padding-top: 15px;
                 padding-bottom: 3px;
                 position: absolute;
                 top: 0px;
                 text-align: center;
                 font-weight: 700;
+                padding-left: 30px;
+                padding-right: 30px;
 
                 a {
                     color: #FF0000;
@@ -547,6 +548,113 @@ $tender-font-size: 12px;
         }
     }
 }
+
+
+// COLOR_HINTS_BLOCK
+.hints_wrapper {
+    padding-top: 20px;
+}
+
+.hints_block {
+    padding-left: 10px !important;
+
+    .color_block {
+        display: inline-block;
+        width: 22px;
+        height: 15px;
+    }
+
+    .orange_blck {
+        background-color: #F7E0BD;
+        border: 1px solid #E2DFD8;
+    }
+
+    .blue_blck {
+        background-color: #BCD3F9;
+        border: 1px solid #E2DFD8;
+        margin-left: 12px;
+    }
+
+    .green_blck {
+        background-color: #CCDDAE;
+        border: 1px solid #E2DFD8;
+        margin-left: 12px;
+    }
+
+    .violet_blck {
+        background-color: #990099;
+        border: 1px solid #E2DFD8;
+    }
+
+    .zaklad_icon {
+        background: url("../images/zak1.gif") no-repeat;
+        margin-left: 12px;
+    }
+
+    .hint_first_line {
+        margin-bottom: 8px;
+    }
+
+    .hint_title {
+        height: 15px;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: $font-size;
+        font-family: Verdana, Arial, sans-serif;
+        vertical-align: text-top;
+
+    }
+}
+
+.right_banner {
+    padding-left: 85px !important;
+    padding-right: 10px !important; 
+
+    .right_banner_wrp {
+        float: right;
+    }
+
+    img {
+        width: 468px;
+        height: 60px;
+    }
+
+    .order_adds {
+        color:#FF0000;
+        text-decoration:underline;
+        font-size: $font-size;
+        font-weight: 400;
+        font-family: Verdana, Arial, sans-serif;
+    }
+}
+
+
+// PAGINATION
+.pagination {
+    color: $primary-color;
+
+    .current {
+        font-weight: 700;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pagination-next {
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pagination-next a::after {
+        display: none;
+    }
+}
+
 
 //FOOTER
 .footer_block {
@@ -826,7 +934,7 @@ img.hit_icon {
 
 .hide_not_small {
     @include breakpoint(medium up) {
-        display: none;
+        display: none !important;
     }
 }
 

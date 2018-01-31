@@ -87,4 +87,8 @@ $(document).ready(function () {
     });
 
 
+    // PAGINATION
+    $(".pagination .current").prepend('[').append(']');
+
+
 })
