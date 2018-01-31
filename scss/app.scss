@@ -630,6 +630,10 @@ $tender-font-size: 12px;
 
 
 // PAGINATION
+.pagination_wrapp {
+    height: 27px;
+}
+
 .pagination {
     color: $primary-color;
 
@@ -654,6 +658,166 @@ $tender-font-size: 12px;
         display: none;
     }
 }
+
+
+// TENDERS_TABLE
+$responsive-card-table-bottom-gap: 0px;
+$responsive-card-table-border: 1px solid #E2DFD8;
+$responsive-card-table-stack-point: 480px;
+$responsive-card-table-label-bg: #e6e6e6;;
+
+.table_col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.responsive-card-table {
+    border-collapse: collapse;
+
+    &.unstriped tbody {
+        background-color: transparent;
+    }
+
+    th {
+        background: #fbf7ee;
+        border: 1px solid #E2DFD8;
+        padding: 3px;
+        font-size: $font-size;
+        font-weight: 700;
+        font-family: Verdana,sans-serif;
+        color: #615F60;
+        text-align: center;
+
+        a {
+            font-size: $font-size;
+            font-weight: 700;
+            font-family: Verdana,sans-serif;
+            color: #615F60;
+            border-bottom: 1px dashed #615F60;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    tr,
+    th,
+    td {
+        border: $responsive-card-table-border;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fbf7ee
+    }
+
+    td {
+        font-size: $font-size;
+        font-weight: 400;
+        font-family: Verdana,sans-serif;
+        color: $primary-color;
+        text-align: center;
+
+        &.summ_col {
+            text-align: left;
+        }
+
+        &.deliv_col {
+            text-align: left;
+        }
+
+        &.num_col {
+            background: #bcd3f9;
+        }
+    }
+
+    .num_col {
+        width: 1%;
+    }
+
+    .date_publ_col {
+        width: 8%;
+    }
+
+    .summ_col {
+        width: 8%;
+    }
+
+    td.predm_col {
+        text-align: left;
+
+        a {
+            font-weight: 400;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .date_pod_col {
+        width: 9%;
+    }
+
+    .deliv_col {
+        width: 22%;
+        }
+
+    @media screen and (max-width: $responsive-card-table-stack-point) {
+        thead tr {
+            position: absolute;
+            top: -9999em;
+            left: -9999em;
+        }
+
+        tr {
+            border: $responsive-card-table-border;
+            display: block;
+        }
+
+        tr + tr {
+            margin-top: $responsive-card-table-bottom-gap;
+        }
+        /* Get table cells to act like rows */
+
+        td {
+            border: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: $responsive-card-table-border;
+            padding-left: 50%;
+            position: relative;
+
+            &:before {
+                content: attr(data-label);
+                display: inline-block;
+                font-weight: bold;
+                line-height: 1.5;
+                margin-left: -100%;
+                width: 50%;
+                position: relative;
+                z-index: 1;
+                text-align: left;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                background: $responsive-card-table-label-bg;
+                width: 25%;
+                text-align: left;
+                height: 98%;
+                left: 1px;
+                top: 1px;
+                z-index: 0;
+            }
+        }
+    }
+
+}
+
+
 
 
 //FOOTER
