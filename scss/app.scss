@@ -375,7 +375,7 @@ $tender-font-size: 12px;
             color: $primary-color;
             text-decoration: none;
             font-size: $font-size;
-            font-family: $body-font-family;
+            font-family: Verdana, Arial, sans-serif;
             font-weight: bold;
             vertical-align: top;
 
@@ -422,9 +422,128 @@ $tender-font-size: 12px;
 
     
     a {
+        margin-left: 5px;
 
         .rss_icon {
-            vertical-align: baseline !important;
+            vertical-align: sub !important;
+        }
+    }
+
+    .filter_wrapper {
+        margin-top: 5px;
+
+        .filter-row {
+            margin-top: 9px;
+        }
+
+        .with_hint {
+            padding-top: 15px;
+            position: relative;
+        }
+
+        .filter_caption {
+            color: $primary-color;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $tender-font-size;
+            font-weight: 700;
+            text-align: left;
+
+            span {
+                position: relative;
+                top: 2px;
+            }
+        }
+
+        .second_col {
+            padding-left: 5px !important;
+        }
+
+        .filter_input {
+            padding-left: 35px;
+            color: $primary-color;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $tender-font-size;
+            font-weight: 700;
+            text-align: left;
+
+            span {
+                position: relative;
+                top: 2px;
+                margin-left: 20px;
+            } 
+
+            .fromtTo {
+                margin-left: 8px;
+                font-weight: 400;
+            }
+            
+            .input_hint {
+                font-size: 7pt;
+                color: #666666;
+                margin: 0px;
+                font-weight: 400;
+                position: absolute;
+
+            }
+
+            input {
+                display: inline-block;
+                border: 1px solid #000000;
+                color: #000;
+                font-family: Verdana, Arial, sans-serif;
+                font-size: 12px;
+                height: 19px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin: 0px;
+            }
+
+            input.sbutton {
+                width: 100%;
+                border: 1px solid #000000;
+                font: normal 12px Verdana,sans-serif;
+            }
+
+            select {
+                width: 100%;
+                border: 1px solid #000000;
+                color: #000;
+                font-family: Verdana, Arial, sans-serif;
+                font-size: $tender-font-size;
+                height: 19px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin: 0px;
+            }
+        }
+
+        .second_col {
+
+            input {
+                margin-left: 5px;
+            }
+
+            .register_announcement {
+                margin-left: 10px;
+                background-color: #FBF7EE;
+                // height: 48px;
+                border: 1px solid #E2DFD8;
+                padding-top: 20px;
+                padding-bottom: 3px;
+                position: absolute;
+                top: 0px;
+                text-align: center;
+                font-weight: 700;
+
+                a {
+                    color: #FF0000;
+                    text-decoration:underline;
+                }
+
+                a:last-child {
+                    color: $primary-color;
+                }
+            }
         }
     }
 }
