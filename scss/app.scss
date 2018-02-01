@@ -441,6 +441,11 @@ $tender-font-size: 12px;
             position: relative;
         }
 
+        .two_row_hint {
+            padding-top: 33px;
+            position: relative;
+        }
+
         .filter_caption {
             color: $primary-color;
             font-family: Verdana, Arial, sans-serif;
@@ -483,7 +488,11 @@ $tender-font-size: 12px;
                 margin: 0px;
                 font-weight: 400;
                 position: absolute;
+                top: -2px;
+            }
 
+            .input_spec_hint {
+                width: 38%;
             }
 
             input {
@@ -635,6 +644,8 @@ $tender-font-size: 12px;
 }
 
 .pagination {
+    // margin-top: 5px;
+    // margin-bottom: 0px;
     color: $primary-color;
 
     .current {
@@ -673,6 +684,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
 
 .responsive-card-table {
     border-collapse: collapse;
+    margin-bottom: 0px;
 
     &.unstriped tbody {
         background-color: transparent;
@@ -714,9 +726,14 @@ $responsive-card-table-label-bg: #e6e6e6;;
     td {
         font-size: $font-size;
         font-weight: 400;
-        font-family: Verdana,sans-serif;
+        font-family: Verdana, Arial, sans-serif;
         color: $primary-color;
         text-align: center;
+        line-height: normal;
+
+        a {
+            font-size: $font-size;
+        }
 
         &.summ_col {
             text-align: left;
@@ -741,6 +758,11 @@ $responsive-card-table-label-bg: #e6e6e6;;
 
     .summ_col {
         width: 8%;
+    }
+
+    .add_col {
+        width: 1%;
+        padding: 5px;
     }
 
     td.predm_col {
@@ -830,7 +852,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
     }
 
 
-    .instr_caption {
+    .reference_caption {
 
         p {
             padding: 2px 0px 5px 0px;
@@ -850,112 +872,12 @@ $responsive-card-table-label-bg: #e6e6e6;;
         }
     }
 
-    .instr_body {
-
-        img {
-            margin-left: 5px;
-            display: inline-block;
-        }
-
-        a {
-            font-family: $body-font-family;
-            font-size: $font-size;
-            font-weight: 700;
-            color: $primary-color;
-            vertical-align: top;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .footer_bold, p {
-            font-family: Verdana, Arial, sans-serif;
-            font-size: 9.3px;
-            font-weight: 700;
-            color: $primary-color;
-        }
-
-        p {
-            font-weight: 400;
-        }
-
-        .instr_block {
-            padding: 0;
-            line-height: 1 !important;
-
-            .footer_img_wrapper, .instr_block_text {
-                display: inline-block;
-            }
-            
-            .footer_img_wrapper {
-                width: 35%;
-
-                img {
-                    position: relative;
-                    bottom: 20px;
-                }
-
-                a {
-                    line-height: 1.2;
-                }
-            }
-    
-            .instr_block_text {
-                width: 57%;
-
-                
-                p, strong {
-                    margin: 0px;
-                    position: relative;
-                    top: 25px;
-                }
-
-            }
-        }
-
-        .instr_block2 {
-            .footer_img_wrapper {
-
-                img {
-                    position: relative;
-                    bottom: 40px;
-                }
-
-            }
-
-            .instr_block_text {
-                
-                p, strong {
-                    margin: 0px;
-                    position: relative;
-                    top: 5px;
-                }
-
-            }
-        }
-
-        .instr_block3 {
-            .footer_img_wrapper {
-
-                img {
-                    position: relative;
-                    bottom: 8px;
-                }
-
-            }
-
-            .instr_block_text {
-                
-                p, strong {
-                    margin: 0px;
-                    position: relative;
-                    top: 36px;
-                }
-
-            }
-        }
-
+    .reference_p {
+        line-height: normal;
+        font-family: Verdana, Arial, sans-serif;
+        color: #000000;
+        font-size: $tender-font-size;
+        font-weight: normal;
     }
 
     .footer_phone {
@@ -964,8 +886,6 @@ $responsive-card-table-label-bg: #e6e6e6;;
         font-weight: 700;
         font-family: Verdana, Arial, sans-serif;
         margin-bottom: 0px;
-        // position: relative;
-        // bottom: 20px;
     }
 
     .footer_consultation {
@@ -1025,36 +945,20 @@ $responsive-card-table-label-bg: #e6e6e6;;
     position: relative;
 }
 
+.footer_menu_blck {
+    padding-left: 30px !important;
+}
+
+.footer_banner {
+    margin-top: 8px;
+}
+
 img.hit_icon {
     position: absolute;
     right: 5px;
     top: 6px;
 }
 
-.footer_instr_wrapper {
-
-    .footer_left_menu {
-        // position: relative;
-        margin-left: 10px !important;
-        bottom: 10px;
-    
-        li {
-            display: inline-block;
-            color: $primary-color;
-            font-weight: 700;
-            font-size: $font-size;
-            font-family: Verdana, Arial, sans-serif;
-    
-            &:hover {
-                text-decoration: underline;
-            }
-    
-            img {
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
 
 //FOOTER_BOTTOM_LINE 
 .footer_bottom_line {
